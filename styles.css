@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Inter-Bold';
     src: url('assets/fonts/static/Inter-Bold.ttf') format('truetype');
     font-weight: bold;
@@ -17,7 +17,7 @@
     font-family: 'Inter-Variable';
     src: url('assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
     font-weight: 100 900; /* Variable font supports multiple weights */
-}
+/* } */ */
 *{
     display: flex;
     flex-direction: column;
@@ -27,7 +27,7 @@
 }
 body{
     background: hsl(0, 0%, 8%);
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
