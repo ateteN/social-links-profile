@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
     font-family: 'Inter-Bold';
     src: url('assets/fonts/static/Inter-Bold.ttf') format('truetype');
     font-weight: bold;
@@ -13,51 +13,47 @@
     src: url('assets/fonts/static/Inter-SemiBold.ttf') format('truetype');
     font-weight: 600;
 }
-@font-face {
-    font-family: 'Inter-Variable';
-    src: url('assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
-    font-weight: 100 900; /* Variable font supports multiple weights */
-/* } */ */
-*{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    /* overflow: hidden; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
+body {
     background: hsl(0, 0%, 8%);
-    font-family: Arial, sans-serif;
+    font-family: 'Inter-Regular', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
-h1{
+h1 {
     font-family: 'Inter-Bold', sans-serif;
     color: hsl(0, 0%, 100%);
     font-weight: 600;
+    text-align: center;
 }
-p{
+p {
     color: hsl(0, 0%, 100%);
     font-size: 14px;
-    font-weight: 10;
+    font-weight: 400;
+    text-align: center;
 }
 .location {
     color: hsl(75, 94%, 57%);
     font-weight: 600;
-    margin-top: 10px;
-    top: 0;
+    margin-top: 2px;
     font-size: 14px;
+
 }
-.bio{
+.bio {
     font-size: 14px;
-    margin-top: 5px;
+    margin-bottom: 5px;
 }
-.card-container{
+.card-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     background: hsl(0, 0%, 12%);
     padding: 20px;
@@ -65,33 +61,33 @@ p{
     border-radius: 10px;
     margin-top: 50px;
 }
+.links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
 .links a {
     text-decoration: none;
-    flex-direction: column;
-    /* font-weight: 400;
-    font-size: 14px; */
+    display: block;
 }
-.links .choice{
+.links .choice {
     padding: 10px;
     color: white;
     background: hsl(0, 0%, 20%);
-    margin: 5px;
+    margin: 5px 0;
     border-radius: 5px;
-    width: 180%;
+    width: 100%;
+    text-align: center;
     font-weight: 600;
     font-size: 14px;
     transition: .4s;
 }
-.links .choice:hover{
+.links .choice:hover {
     background: hsl(75, 94%, 57%);
     color: hsl(0, 0%, 8%);
 }
-.image{
-    width: 100%;
-    border-radius: 50%;
+.image {
     width: 80px;
-    /* height: 80px; */
-}
-.card-container h2 {
-    color: white;
+    border-radius: 50%;
 }
